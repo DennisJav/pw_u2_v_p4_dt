@@ -1,9 +1,7 @@
 <template>
   <div class="hello">
-    
-    <input type="text" >
-    <button >Agregar</button>
-    
+    <input type="text" />
+    <button>Agregar</button>
   </div>
 </template>
 
