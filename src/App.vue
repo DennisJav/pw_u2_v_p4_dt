@@ -1,30 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-
-  <Contador titulo="Estudiante" v-bind:inicio="2+400"/>
-  
-  <Contador titulo="Profesor" :inicio="101" />
+  <CaralocaMagica/>
 
 </template>
 
 <script>
-import Contador from "./components/contador.vue";
+import CaralocaMagica from "./components/CaralocaMagica.vue";
 
 export default {
   name: "App",
   components: {
-    Contador,
+    CaralocaMagica,
+    
   },
 };
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 </style>
