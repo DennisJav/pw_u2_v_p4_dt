@@ -1,15 +1,15 @@
 <template>
-  <CaralocaMagica/>
-
+  <PokemonPage/>
+  
 </template>
 
 <script>
-import CaralocaMagica from "./components/CaralocaMagica.vue";
+import PokemonPage from "./modules/pokemon/pages/PokemonPage.vue";
 
 export default {
   name: "App",
   components: {
-    CaralocaMagica,
+    PokemonPage,
     
   },
 };
@@ -17,10 +17,7 @@ export default {
 
 <style>
 #app {
-    margin-top: 50px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+
     text-align: center;
 }
 </style>
