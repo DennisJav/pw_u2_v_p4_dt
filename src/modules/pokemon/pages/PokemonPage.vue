@@ -16,16 +16,18 @@ export default {
     PokemonOps,
   },
 
-  data: {
-    arregloPok:[],
+  data() {
+    return {
+      arregloPok: [],
+    }
   },
-  
+
 
   methods: {
     async cargaJuegoInicial() {
       this.arregloPok = await obtenerFachadaPokemons();
-     // console.log(arregloPokemons);
-     return  this.arregloPok
+      // console.log(arregloPokemons);
+      return this.arregloPok
     },
   },
 
@@ -37,5 +39,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
