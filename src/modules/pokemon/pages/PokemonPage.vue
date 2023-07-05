@@ -11,14 +11,17 @@ import PokemonOps from "../components/pokemonOps.vue";
 import obtenerFachadaPokemons from "../helpers/clientePokemonAPI.js";
 //console.log(obtenerFachadaPokemons());
 export default {
+   data() {
+    return {
+arregloPok:[]
+    }  
+  },
   components: {
     PokemonImg,
     PokemonOps,
   },
 
-  data: {
-    arregloPok:[],
-  },
+ 
   
 
   methods: {
