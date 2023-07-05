@@ -21,14 +21,23 @@ arregloPok:[]
     PokemonOps,
   },
 
+<<<<<<< HEAD
  
   
+=======
+  data() {
+    return {
+      arregloPok: [],
+    }
+  },
+
+>>>>>>> dc4a1913b46fc69857c998d1a5537aa636ce3c06
 
   methods: {
     async cargaJuegoInicial() {
       this.arregloPok = await obtenerFachadaPokemons();
-     // console.log(arregloPokemons);
-     return  this.arregloPok
+      // console.log(arregloPokemons);
+      return this.arregloPok
     },
   },
 
@@ -40,5 +49,4 @@ arregloPok:[]
 };
 </script>
 
-<style>
-</style>
+<style></style>
