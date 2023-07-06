@@ -1,15 +1,7 @@
 <template>
-  <div class="contendor-img">
-    <img
-      class="oculta-pokemon"
-      :src="imagenFound"
-      alt="No se puede mostrar imagen"
-    />
-    <img
-      v-if="showPokemon"
-      :src="imagenFound"
-      alt="No se puede mostrar imagen"
-    />
+  <div class="contenedor-imagen">
+    <img class="oculta-pokemon" :src="imagenFuente" alt="no se puede mostrar" />
+    <img v-if="muestraPokemon" :src="imagenFuente" alt="no se puede mostrar" />
   </div>
 </template>
 
@@ -20,20 +12,25 @@ export default {
       type: Number,
       required: true,
     },
-    showPokemon: {
+    muestraPokemon:{
       type: Boolean,
-      required: true,
-    },
+      required: true
+    }
   },
-
+  data() {
+    return {};
+  },
+  methods: {},
   computed: {
-    imagenFound() {
-      //     return (
-      //      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/" +
-      //       this.pokemonId +
-      //       ".svg"
-      //     );
-      return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${this.pokemonId}.svg`;
+    imagenFuente() {
+      console.log("se imprimio");
+      return (
+        // "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/" +
+        // this.pokemonId +
+        // ".svg"
+        `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${this.pokemonId}.svg`
+      );
+      
     },
   },
 };
@@ -43,13 +40,15 @@ export default {
 .oculta-pokemon {
   filter: brightness(0);
 }
+
 img {
   position: absolute;
   height: 200px;
+  
 }
-.contendor-img {
+.contenedor-imagen {
+  height: 250px;
   display: flex;
   justify-content: center;
-  height: 200px;
 }
 </style>
