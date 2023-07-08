@@ -1,6 +1,8 @@
 <template>
-    <h1>404</h1>
-    <p>Pagina no encontrada, verifica la URL</p>
+    <div class="container">
+        <h1>404</h1>
+        <p>Pagina no encontrada, verifica la URL</p>
+    </div>
 </template>
   
 <script>
@@ -8,4 +10,8 @@ export default {
 }
 </script>
   
-<style></style>
+<style scoped>
+.container {
+  text-align: center;
+}
+</style>

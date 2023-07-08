@@ -7,7 +7,7 @@ const routes = [
     },
     {
         path: "/juego",
-        component: ()=> import('../modules/pokemon/pages/JuegoPage')
+        component: ()=> import('../modules/pokemon/pages/PokemonPage')
     },
     {
         path: "/premios",

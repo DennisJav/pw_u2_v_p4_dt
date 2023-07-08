@@ -26,7 +26,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 .container {
     display: grid;
     justify-content: center;
@@ -40,15 +40,17 @@ ul {
 li {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  background-color: rgb(153, 149, 149);
+  background-color: rgb(255, 255, 255);
   margin-bottom: 10px;
   width: 200px;
   cursor: pointer;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
+  color: black;
+  text-shadow: none;
 }
 
 li:hover {
-  background-color: rgb(4, 121, 33);
+  background-color: rgb(233, 253, 5);
 }
 </style>

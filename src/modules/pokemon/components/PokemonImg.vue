@@ -50,5 +50,6 @@ img {
   height: 250px;
   display: flex;
   justify-content: center;
+  filter: drop-shadow(-2px 2px 45px rgba(255, 255, 255, 2));
 }
 </style>
