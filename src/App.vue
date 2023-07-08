@@ -3,6 +3,7 @@
   
 </template>
 
+
 <script>
 import PokemonPage from "./modules/pokemon/pages/PokemonPage.vue";
 
